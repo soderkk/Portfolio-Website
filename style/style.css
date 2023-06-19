@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+  margin: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0;
+}
+
+body {
+  background-image: url("/images/OuterSpace.jpg");
+  cursor: auto;
+}
+
+html,
+body {
+  font-family: "Roboto Mono";
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+  text-decoration: transparent;
+}
+a:active {
+  background-color: transparent;
+  text-decoration: transparent;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  padding-bottom: 180px;
+  padding-top: 250px;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 26px;
+}
+
+.sub {
+  color: #ffffff;
+}
+
+i {
+  font-size: 1.2rem;
+  color: white;
+  padding-left: 20px;
+  position: relative;
+}
+
+#hover i {
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    left: -850px;
+    top: 500px;
+  }
+}
+
+.nav-left {
+  display: flex;
+  padding-left: 2rem;
+  float: left;
+}
+
+.nav-right {
+  display: flex;
+  padding-right: 2rem;
+  position: relative;
+  float: right;
+}
+
+.nav-left,
+.nav-right {
+  padding-top: 25px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(189, 189, 189);
+}
+
+.nav-left > a {
+  color: white;
+}
+
+.nav-right > a {
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: url(/images/OuterSpace.jpg);
+  padding-bottom: 20px;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgba(255, 255, 255, 0), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.container2 {
+  position: relative;
+  padding: 10px;
+}
+
+#Gallery {
+  padding-left: 50px;
+}
+
+.image img {
+  border-radius: 50%;
+}
+.image {
+  margin-left: 100px;
+  padding-right: 40px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.text {
+  max-width: fit-content;
+  margin-right: 100px;
+  line-height: 170%;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  display: block;
+}
+
+#Contact a {
+  color: black;
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  max-height: 371px;
+  border-radius: 20px;
+}
+
+.interests .scroll-container img {
+  max-height: 200px;
+}
+
+.container2 h2 {
+  float: left;
+}
+
+.container2 i {
+  float: left;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+a i {
+  font-size: 20px;
+}
+
+.container2 h2:hover {
+  color: rgb(189, 189, 189);
+}
+
+a h2:hover {
+  color: rgb(189, 189, 189);
+}
+
+.container .box h3 {
+  color: rgb(122, 122, 122);
+}
+
+.container .box h3:hover {
+  color: rgb(189, 189, 189);
+}
+
+.box h3 {
+  color: black;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container-gallery:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.under-nav {
+  margin-top: 100px;
+}
+
+.under-nav h2 {
+  padding-left: 50px;
+}
+
+.box {
+  max-width: 23%;
+  line-height: 170%;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.interests .box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+#Interests {
+  padding-left: 120px;
+}
+
+.interests a {
+  color: rgb(122, 122, 122);
+  font-size: 1rem;
+}
+.interests a:hover {
+  color: rgb(189, 189, 189);
+}
+
+.projects .box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-content: center;
+  max-width: 100%;
+  display: block;
+}
+.projects .container {
+  margin-top: 150px;
+  margin-left: 80px;
+  margin-right: 80px;
+  max-width: 100%;
+  align-content: center;
+  display: block;
+  margin-bottom: 80px;
+}
+
+.projects h2 {
+  margin-left: 30px;
+}
+
+.projects a {
+  color: rgb(122, 122, 122);
+  font-size: 1rem;
+}
+.projects a:hover {
+  color: rgb(189, 189, 189);
+}
+
+.projects a {
+  display: flex;
+}
+
+.projects i {
+  padding-top: 30px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer,
+.page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 100px;
+}
+.site-footer {
+  padding: 10px;
+  background: white;
+  color: black;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgba(255, 255, 255, 0), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+footer img {
+  border-radius: 50%;
+}
+
+footer p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer .friend {
+  display: flex;
+}
+
+footer .friends {
+  display: flex;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

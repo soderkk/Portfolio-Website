@@ -1,20 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Site</title>
-  <link id="page-theme" rel="stylesheet" href="/styles/sakura.css" />
-  <link rel="stylesheet" href="/styles/style.css" />
-</head>
-
-<body>
-	<div class="bar">
-        <div class="left">
-            <h2 href ="/">Kayla's Portfolio</h2>
+  <head>
+    <title>Kayla Presents</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/8b40a98246.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="/">Kayla Presents</a>
+      </div>
+      <div class="nav-right">
+        <div id="hover">
+          <i class="fa-solid fa-meteor"></i>
+        </div>
+        <a href="#Contact">Contact Me</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Interests">Interests</a>
+        <a href="#Projects">Projects</a>
+      </div>
+    </nav>
+    <div class="page-wrap">
+      <center>
+        <h1>Kayla Presents</h1>
+      </center>
+      <div class="container">
+        <div class="image">
+          <img src="images/Profile.png" width="200" height="200" />
+        </div>
+        <div class="subtitle">
+          <h2 id="Contact" class="sub">About Me</h2>
+          <div class="text">
+            <p>
+              Hello! I'm Kayla. I'm currently in grade 10, and I'm an avid
+              baker, reader, artist, and robotics enthusiast. I have been on FRC
+              team 5406 Celt-X for two years now as a programmer and I was the
+              operator of the robot, which means I got to push a bunch of
+              buttons! I love muted colours, especially
+              <b><span style="color: #362d24">brown</span></b> and
+              <b><span style="color: #30542f">green</span></b
+              >. I hope to start some new projects this summer and expand my
+              knowledge of electronics and programming as a whole. I currently
+              know Java and I'm in the process of learning Python, HTML and CSS.
+              Thank you for stopping by! <br />
+            </p>
+            <h3>Find me on:</h3>
+            <a href="https://github.com/soderkk"
+              ><img src="/images/github-mark.svg" height="30" width="30"
+            /></a>
+            <a href="mailto: sodergaka069@hwcdsb.ca"
+              ><img src="/images/email.svg" height="30" width="30"
+            /></a>
+            <a href="https://www.linkedin.com/in/kayla-sodergard-22757927b/"
+              ><img
+                src="/images/LinkedIn_icon_circle.svg"
+                height="30"
+                width="30"
+            /></a>
+          </div>
         </div>
       </div>
-  <script src="script.js"></script>
+      <a href="/Interests.html">
+        <h2 id="Interests" class="sub">
+          Interests<i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </h2>
+      </a>
+      <div class="container">
+        <div class="box">
+          <a href="/Interests.html#Robotics">
+            <h3>Robotics</h3>
+          </a>
+          <p>
+            I'm on Bishop Ryan's robotics team 5406 Celt-X. Celt-X is an FRC
+            team, which basically means that we compete in the FIRST Robotics
+            Competition for highschool students. FIRST stands for For
+            Inspiration and Recognition of Science and Technology. Each year,
+            students from all over the world build 125lb robots that travel 13
+            ft/s and perform specific tasks while playing in a 3v3 on a
+            basketball sized field.
+          </p>
+        </div>
+        <div class="box">
+          <a href="/Interests.html#Reading">
+            <h3>Reading</h3>
+          </a>
+          <p>
+            Ever since I was about 7 or 8, wherever I was, a book was near. I
+            would read just about anything with words, although I've always been
+            partial to anything fantasy, dystopian, or anything fairy tale
+            esque. If I can't experience magic in reality, I might as well
+            surround myself with the next best thing.
+          </p>
+        </div>
+        <div class="box">
+          <a href="/Interests.html#Baking">
+            <h3>Baking</h3>
+          </a>
+          <p>
+            I've recently gotten into baking, and it's been a great way to
+            experiment while making things for others (and me!) to enjoy. I love
+            the simplicity of following the instructions while still having the
+            ability to alter things to better suit you. My next goals would be
+            to work on my cake making + decorating, and start a sour dough
+            starter.
+          </p>
+        </div>
+      </div>
+      <div class="container2">
+        <a href="/Gallery.html">
+          <h2 id="Gallery" class="sub">Gallery</h2>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <div class="scroll-container">
+          <img src="images/catinary.jpg" alt="Mountains" />
+          <img src="images/more catinary.jpg" alt="Mountains" />
+          <img src="images/clowd.JPG" alt="Mountains" />
+          <img src="images/pink sky.JPG" alt="Mountains" />
+          <img src="images/sky.jpg" alt="Mountains" />
+          <img src="images/baby.JPG" alt="Mountains" />
+          <img src="images/duck.jpg" alt="Mountains" />
+          <img src="images/sniff.jpg" alt="Mountains" />
+          <img src="images/yawn.jpg" alt="Mountains" />
+          <img src="images/yawn2.jpg" alt="Mountains" />
+          <img src="images/stretch.JPG" alt="Mountains" />
+        </div>
+      </div>
+      <div class="projects" id="Projects">
+        <div class="container">
+          <a href="/Projects.html">
+            <h2 class="sub">Computer Engineering Projects</h2>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <div class="box">
+            <p>
+              I've done a lot of really cool stuff in TEJ201, including creating
+              this portfolio website! Besides this website, I've:
+            </p>
+            <ul>
+              <a href="/Projects.html#PC"> <li>Built a PC</li> </a>
+              <a href="/Projects.html#Solder"> <li>Soldered</li></a>
+              <a href="/Projects.html#CAD">
+                <li>Built Circuits using TinkerCAD</li></a
+              >
+            </ul>
+            <p>
+              It's a really fun and interesting course! I would definitely
+              reccomend taking it if you can :)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p>Check out my friends!</p>
+      <div class="friends">
+        <div class="friend">
+          <a href="https://darmanitan.github.io/portfolio/">
+            <img
+              src="https://avatars.githubusercontent.com/u/80493238?v=4"
+              height="50px"
+            />
+          </a>
+          <p>Cris!</p>
+        </div>
+        <div class="friend">
+          <a
+            href="https://sites.google.com/u/0/d/1Upf4zk-P4AgP2m9b6r25FaxE1gwkPcnE/preview?pli=1&authuser=0"
+            ><img
+              src="https://bc3-production-assets-cdn.basecamp-static.com/3399861/people/BAhpBPtaMwI=--c741a2155f509f6e939378346a0e548f4e1e8f02/avatar?v=1"
+              height="50px"
+          /></a>
+          <p>Grace!</p>
+        </div>
+      </div>
+    </footer>
+
+    <script></script>
   </body>
 </html>
